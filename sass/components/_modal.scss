@@ -13,8 +13,8 @@
   transform: scale(0.8) translate(-50%, -50%);
 }
 .modal {
-  height: 581px;
-  width: 528px;
+  //   height: 581px;
+  //   width: 528px;
   position: absolute;
   background-color: $background;
   top: 50%;
@@ -32,6 +32,11 @@
     text-align: center;
     margin-top: 0px;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
   }
 }
 

@@ -2,22 +2,21 @@
   background: $alt-background;
 }
 .team-list {
-  display: flex;
+  //   display: flex;
 }
+
 .teem-item {
   margin-right: 0px;
   perspective: 600px;
 
   & + & {
-    margin-left: 30px;
+    // margin-left: 30px;
   }
 }
-
 .team-list {
-  display: flex;
-  margin-left: 50px;
+  //   display: flex;
+  //   margin-left: 50px;
 }
-
 .position {
   text-align: center;
   margin-top: 0px;
@@ -28,11 +27,7 @@
   font-size: 16px;
   line-height: 1.19;
 }
-.teem-item:hover .card-content {
-  transform: rotateY(0);
-  transition: transform 500ms linear;
-  transform: rotateY(360deg);
-}
+
 .teem-item:hover .photo {
   transform: rotateY(0);
   transition: transform 500ms linear;

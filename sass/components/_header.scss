@@ -1,7 +1,7 @@
 header {
   background-color: $background;
   border-bottom: 1px solid #ececec;
-  position: fixed;
+  //   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
@@ -35,25 +35,21 @@ header {
   align-items: center;
 }
 .nav {
-  display: flex;
-  margin-left: 75px;
-
+  //   display: flex;
+  //   margin-left: 75px;
   /* margin-top: 35px; */
+
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
 }
 .nav-list-link {
   position: relative;
   & + & {
     margin-left: 50px;
-  }
-
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    margin-left: 75px;
-  }
-  @media screen and (min-width: 1200px) {
   }
 }
 .nav-list-link > .current::after {
@@ -90,9 +86,15 @@ header {
   color: $add-text;
 }
 .nav-contacts {
-  display: flex;
-  margin-left: auto;
-  perspective: 600px;
+  //   display: flex;
+  //   margin-left: auto;
+  //   perspective: 600px;
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
 }
 .nav-list-contacts {
   display: flex;

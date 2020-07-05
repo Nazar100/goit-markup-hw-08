@@ -1,5 +1,12 @@
 .no-padding {
   padding-top: 0;
+
+  @media screen and(max-width: 480px) {
+    display: none;
+  }
+  @media screen and(min-width: 480px) {
+    display: none;
+  }
 }
 .caption {
   font-weight: 700;
@@ -8,9 +15,13 @@
 
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 
   color: $captions;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
 }
 .what-we-do {
   display: flex;
