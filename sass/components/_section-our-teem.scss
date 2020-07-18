@@ -19,8 +19,7 @@
   //   margin-left: 50px;
 }
 .position {
-  width: 200px;
-  margin-left: 50px;
+  // margin-left: 50px;
   margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -44,6 +43,7 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
 
   .teem-item:hover &,
   .teem-item:focus & {
@@ -61,7 +61,7 @@
   font-size: 16px;
   line-height: 1.19;
   display: inline-block;
-  margin-left: 57px;
+  // margin-left: 57px;
   margin-top: 0px;
   margin-bottom: 10px;
   margin-right: 0px;
@@ -71,7 +71,7 @@
 .networks-list {
   display: inline-flex;
   align-items: center;
-  margin-left: 50px;
+  // margin-left: 50px;
 }
 .networks-item + .networks-item {
   margin-left: 10px;
@@ -104,7 +104,4 @@
 }
 .linkedin {
   padding-top: 9px;
-}
-.alt {
-  margin-left: 75px;
 }
