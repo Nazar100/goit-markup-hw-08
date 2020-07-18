@@ -6,11 +6,12 @@
 }
 
 .teem-item {
-  margin-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
   perspective: 600px;
 
   & + & {
-    // margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 .team-list {
@@ -18,11 +19,13 @@
   //   margin-left: 50px;
 }
 .position {
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 16px;
+  width: 200px;
+  margin-left: 50px;
   margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
+  // display: inline-block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -34,6 +37,7 @@
   transform: rotateY(360deg);
 }
 .card-content {
+  width: 100%;
   background-color: $background;
   padding-top: 30px;
   padding-bottom: 24px;
@@ -46,13 +50,17 @@
     transform: rotateY(0);
     transition: transform 500ms linear;
     transform: rotateY(360deg);
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
   }
 }
 .caption-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
+  display: inline-block;
   margin-left: 57px;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -61,7 +69,7 @@
   color: $captions;
 }
 .networks-list {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-left: 50px;
 }
