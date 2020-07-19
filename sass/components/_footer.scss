@@ -1,8 +1,14 @@
 footer {
   background-color: $foot-background;
-
   padding-bottom: 60px;
   @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
 }
@@ -16,9 +22,30 @@ footer {
   @media screen and (min-width: 480px) {
     padding-top: 60px;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    padding-top: 45px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    padding-top: 45px;
+    justify-content: initial;
+  }
 }
 .footer-container {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .logo-footer {
   text-decoration: none;
@@ -64,6 +91,14 @@ footer {
   line-height: 1.14;
   text-align: center;
   margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 480px) {
+    text-align: left;
+    margin-bottom: 20px;
+  }
   @media screen and (min-width: 480px) {
     text-align: center;
     margin-bottom: 20px;
@@ -116,6 +151,16 @@ footer {
 }
 .footer-networks {
   //   margin-left: 69px;
+  @media screen and (min-width: 768px) {
+    margin-left: 168px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .footer-networks-item {
   margin-left: auto;
@@ -143,6 +188,9 @@ footer {
   //   margin-left: 94px;
 
   // justify-content: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .subscribe-text {
@@ -157,6 +205,10 @@ footer {
   @media screen and (min-width: 480px) {
     display: block;
     text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: left;
   }
 }
 
@@ -180,6 +232,18 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    margin: 0 auto;
+    align-self: center;
+
+    // justify-content: center;
+    // align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 358px;
     margin-bottom: 20px;
   }
 }
@@ -219,6 +283,11 @@ footer {
 
   @media screen and (min-width: 480px) {
     margin-left: 140px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-right: 0px;
+    display: inline-flex;
   }
 }
 

@@ -21,40 +21,56 @@
           <a href="index.html" class="logo">
             <span class="web">Web</span> <span class="studio"> Studio</span></a
           >
-          <ul class="list nav">
-            <li class="nav-list-link">
-              <a href="index.html" class="nav-link link">Студия</a>
-            </li>
-            <li class="nav-list-link">
-              <a href="./portfolio.html" class="nav-link current link"
-                >Портфолио
-              </a>
-            </li>
-            <li class="nav-list-link">
-              <a href="" class="nav-link link">Контакты</a>
-            </li>
-          </ul>
 
-          <ul class="list nav-contacts">
-            <li class="nav-list-contacts">
-              <a href="mailto:info@devstudio.com" class="contacts link">
-                <svg class="icon-contacts" width="16" height="12">
-                  <use href="./image/icons/symbol-defs-2.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="nav-list-contacts">
-              <a href="tel:+380961111111" class="contacts link">
-                <svg class="icon-contacts" width="10" height="15">
-                  <use
-                    href="./image/icons/symbol-defs-2.svg#icon-smartphone"
-                  ></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <button type="button" class="icon-menu is-open" data-menu-button>
+            <svg width="20" height="20" aria-label="Меню" class="menu-hover">
+              <use
+                class="icon-close-menu"
+                href="./image/icons/symbol-defs-alt.svg#icon-close_24px"
+              ></use>
+              <use
+                class="icon-open-menu"
+                href="./image/icons/symbol-defs-alt.svg#icon-menu_24px"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" data-menu>
+            <ul class="list nav">
+              <li class="nav-list-link">
+                <a href="index.html" class="nav-link link">Студия</a>
+              </li>
+              <li class="nav-list-link">
+                <a href="./portfolio.html" class="nav-link link current"
+                  >Портфолио
+                </a>
+              </li>
+              <li class="nav-list-link">
+                <a href="" class="nav-link link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="list nav-contacts">
+              <li class="nav-list-contacts">
+                <a href="mailto:info@devstudio.com" class="contacts link">
+                  <svg class="icon-contacts" width="16" height="12">
+                    <use href="./image/icons/symbol-defs-2.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="nav-list-contacts">
+                <a href="tel:+380961111111" class="contacts link">
+                  <svg class="icon-contacts" width="10" height="15">
+                    <use
+                      href="./image/icons/symbol-defs-2.svg#icon-smartphone"
+                    ></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -94,8 +110,9 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/people-u.jpg"
-                    alt="Наша команада"
+                    srcset="./image/three.jpg 1x, ./image/three-x.jpg 2x"
+                    src="./image/three.jpg"
+                    alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
                   />
@@ -120,8 +137,9 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/basketball-u.jpg"
-                    alt="Баскетбол"
+                    srcset="./image/ball.jpg 1x, ./image/ball-x.jpg 2x"
+                    src="./image/ball.jpg"
+                    alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
                   />
@@ -147,8 +165,9 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/restaurant-u.jpg"
-                    alt="Ресторан"
+                    srcset="./image/cafe.jpg 1x, ./image/cafe-x.jpg 2x"
+                    src="./image/cafe.jpg"
+                    alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
                   />
@@ -171,8 +190,9 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/headphones-u.jpg"
-                    alt="Наушники"
+                    srcset="./image/music.jpg 1x, ./image/music-x.jpg 2x"
+                    src="./image/music.jpg"
+                    alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
                   />
@@ -195,8 +215,9 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/boxes-u.jpg"
-                    alt="Коробки"
+                    srcset="./image/boxes.jpg 1x, ./image/boxes-x.jpg 2x"
+                    src="./image/boxes.jpg"
+                    alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
                   />
@@ -219,8 +240,9 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/monitor-u.jpg"
-                    alt="Монитор"
+                    srcset="./image/monitor.jpg 1x, ./image/monitor-x.jpg 2x"
+                    src="./image/monitor.jpg"
+                    alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
                   />
@@ -245,8 +267,9 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/book-u.jpg"
-                    alt="Книга"
+                    srcset="./image/magazine.jpg 1x, ./image/magazine-x.jpg 2x"
+                    src="./image/magazine.jpg"
+                    alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
                   />
@@ -271,8 +294,9 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/lab-u.jpg"
-                    alt="Проект Lab"
+                    srcset="./image/label.jpg 1x, ./image/label-x.jpg 2x"
+                    src="./image/label.jpg"
+                    alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
                   />
@@ -295,7 +319,8 @@
               <a href="" class="link"
                 ><div class="opacity-box">
                   <img
-                    src="./image/img-u.jpg"
+                    srcset="./image/laptop.jpg 1x, ./image/laptop-x.jpg 2x"
+                    src="./image/laptop.jpg"
                     alt="ноутбук"
                     width="370"
                     class="portfolio-photo"
@@ -419,5 +444,6 @@
         <p class="add-info">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

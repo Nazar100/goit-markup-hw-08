@@ -21,7 +21,17 @@
           <a href="index.html" class="logo">
             <span class="web">Web</span> <span class="studio"> Studio</span></a
           >
-          <ul class="list nav">
+         
+          <button type="button" class="icon-menu is-open" data-menu-button>
+        <svg  width="20" height="20" aria-label="Меню" class="menu-hover">
+                  <use class="icon-close-menu" href="./image/icons/symbol-defs-alt.svg#icon-close_24px"></use>
+                  <use class="icon-open-menu" href="./image/icons/symbol-defs-alt.svg#icon-menu_24px"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container" data-menu>
+
+         <ul class="list nav">
             <li class="nav-list-link">
               <a href="" class="nav-link link current">Студия</a>
             </li>
@@ -53,16 +63,6 @@
               >
             </li>
           </ul>
-          <button type="button" class="icon-menu is-open" data-menu-button>
-        <svg  width="20" height="20" aria-label="Меню">
-                  <use class="icon-close-menu" href="./image/icons/symbol-defs-alt.svg#icon-close_24px"></use>
-                  <use class="icon-open-menu" href="./image/icons/symbol-defs-alt.svg#icon-menu_24px"></use>
-        </svg>
-      </button>
-
-      <div class="menu-container" data-menu>
-
-        smth
       </div>
         </nav>
       </div>
@@ -148,12 +148,16 @@
             <li class="do-item">
               <div class="box">
                 <a href=""
-                  ><img
-                    src="./image/img-u.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    class="photo"
-                /></a>
+                  > <img
+        srcset="
+        ./image/laptop.jpg 1x,
+        ./image/laptop-x.jpg 2x  
+        "
+        src="./image/laptop.jpg"
+        alt="ноутбук"
+        width="370"
+        style="display: block"
+      /></a>
                 <div class="new-caption-box">
                   <h3 class="new-caption">
                     <span class="f-w">Десктопные</span>
@@ -166,11 +170,15 @@
               <div class="box">
                 <a href=""
                   ><img
-                    src="./image/box-u.jpg"
-                    alt="Смартфон"
-                    width="370"
-                    class="photo"
-                /></a>
+        srcset="
+        ./image/smartphone.jpg 1x,
+        ./image/smartphone-x.jpg 2x  
+        "
+        src="./image/smartphone.jpg"
+        alt="ноутбук"
+        width="370"
+        style="display: block"
+      /></a>
                 <div class="new-caption-box">
                   <h3 class="new-caption">
                     <span class="f-w">Мобильные</span>
@@ -183,11 +191,15 @@
               <div class="box">
                 <a href=""
                   ><img
-                    src="./image/monitor-u.jpg"
-                    alt="Компьютер"
-                    width="370"
-                    class="photo"
-                /></a>
+        srcset="
+        ./image/monitor.jpg 1x,
+        ./image/monitor-x.jpg 2x  
+        "
+        src="./image/monitor.jpg"
+        alt="ноутбук"
+        width="370"
+        style="display: block"
+      /></a>
                 <div class="new-caption-box">
                   <h3 class="new-caption">
                     <span class="f-w">Дизайнерские</span>
@@ -207,11 +219,15 @@
           <ul class="list team-list">
             <li class="teem-item">
               <img
-                src="./image/member-u.jpg"
-                alt="Джон Смитт"
-                width="270"
-                class="photo"
-              />
+        srcset="
+        ./image/nikolay.jpg 1x,
+        ./image/nikolay-x.jpg 2x  
+        "
+        src="./image/nikolay.jpg"
+        alt="ноутбук"
+        width="270"
+        class="photo"
+      />
               <div class="card-content">
                 <h3 class="caption-name">Николай Кучеренко</h3>
                 <p class="position">Product Designer</p>
@@ -280,12 +296,16 @@
               </div>
             </li>
             <li class="teem-item">
-              <img
-                src="./image/c-developer-u.jpg"
-                alt="Марта Стьюверт"
-                width="270"
-                class="photo"
-              />
+               <img
+        srcset="
+        ./image/olga.jpg 1x,
+        ./image/olga-x.jpg 2x  
+        "
+        src="./image/olga.jpg"
+        alt="ноутбук"
+        width="270"
+        class="photo"
+      />
               <div class="card-content">
                 <h3 class="caption-name alt">Ольга Иванова</h3>
                 <p class="position">Frontend Developer</p>
@@ -358,12 +378,16 @@
               </div>
             </li>
             <li class="teem-item">
-              <img
-                src="./image/marketing-u.jpg"
-                alt="Роберт Джайкис"
-                width="270"
-                class="photo"
-              />
+               <img
+        srcset="
+        ./image/andrey.jpg 1x,
+        ./image/andrey-x.jpg 2x  
+        "
+        src="./image/andrey.jpg"
+        alt="ноутбук"
+        width="270"
+        class="photo"
+      />
               <div class="card-content">
                 <h3 class="caption-name">Андрей Шевченко</h3>
                 <p class="position">Marketing</p>
@@ -437,11 +461,15 @@
             </li>
             <li class="teem-item">
               <img
-                src="./image/ui-designer-u.jpg"
-                alt="Мартин Дои"
-                width="270"
-                class="photo"
-              />
+        srcset="
+        ./image/ivan.jpg 1x,
+        ./image/ivan-x.jpg 2x  
+        "
+        src="./image/ivan.jpg"
+        alt="ноутбук"
+        width="270"
+        class="photo"
+      />
               <div class="card-content">
                 <h3 class="caption-name alt">Иван Николаев</h3>
                 <p class="position">UI Designer</p>
@@ -772,5 +800,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
