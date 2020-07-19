@@ -3,7 +3,11 @@
 }
 .team-list {
   //   display: flex;
-
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -23,10 +27,7 @@
     margin-bottom: 30px;
   }
 }
-.team-list {
-  //   display: flex;
-  //   margin-left: 50px;
-}
+
 .position {
   // margin-left: 50px;
   margin-right: 0px;

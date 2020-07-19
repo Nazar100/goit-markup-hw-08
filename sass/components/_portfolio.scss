@@ -7,7 +7,7 @@
 }
 
 .portfolio-list-item {
-  width: 80%;
+  // width: 70%;
   &:nth-child(-n + 8) {
     margin-bottom: 30px;
   }
@@ -38,6 +38,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 58px;
   }
 }
 .portfolio-button {
@@ -100,6 +106,10 @@
 .portfolio-photo {
   display: block;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .opacity {
@@ -135,6 +145,10 @@
   .product:focus & {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 }
 
